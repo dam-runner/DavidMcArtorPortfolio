@@ -5,25 +5,32 @@ body {
     font-family: Arial, sans-serif; /* Set a default font */
 }
 
+#header_wrap {
+    width: 100%; /* Ensure the header_wrap takes the full width of the viewport */
+    background: #212121; /* Or any other color you want */
+}
+
 #header_wrap .inner {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* This will push the images to the corners */
+    justify-content: space-between; /* Pushes the children to the edges */
     padding: 20px;
-    max-width: 1200px;
+    max-width: 100%; /* Override the theme's max-width */
     margin: 0 auto; /* Center the header */
 }
 
 .header-image-left, .header-image-right {
-    flex: 0 0 auto; /* Do not grow or shrink */
-    width: 100px; /* or any size you prefer */
-    height: auto;
+    width: auto; /* Override the max-width from the theme */
+    max-width: 100px; /* Set a max-width to ensure images don't get too large */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .header-content {
     flex-grow: 1; /* Allows the content to take up remaining space */
     text-align: center;
+    padding: 0 20px; /* Add padding to ensure text doesn't touch the images */
 }
+
 
 
 nav {
