@@ -1,47 +1,66 @@
 
 body {
+    /* Removed flex-direction row unless you have specific reasons for it */
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+#header_wrap .inner {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header */
 }
 
-.header {
-    position: relative;
-}
-
-.header-image {
-    position: absolute;
-    top: 0;
-    right: 0;
+.header-image-left, .header-image-right {
     width: 100px; /* or any size you prefer */
     height: auto;
 }
 
-.main-content {
-    flex: 3;
-    /* Your main content styles */
+.header-content {
+    text-align: center;
+    flex-grow: 1; /* Allows the content to take up remaining space */
 }
 
-.skills-section {
-    flex: 1;
-    margin-left: 20px;
+nav {
+    text-align: center; /* Center the nav if you prefer */
     padding: 20px;
-    border-left: 2px solid #ccc; /* Add a border to separate from the main content */
+    background-color: #f8f8f8; /* Example background color for the nav bar */
 }
 
-.skill-category {
-    margin-bottom: 20px;
+nav a {
+    margin: 0 10px;
+    color: #333; /* Color for your nav links */
+    text-decoration: none; /* No underlines on the links */
 }
 
-.skill-category h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 }
 
-.skill-category ul {
-    list-style-type: none; /* Removes the default list bullet */
-    padding-left: 20px; /* Indent the list */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #header_wrap .inner {
+        flex-direction: column; /* Stack the items vertically on small screens */
+        text-align: center; /* Center the text */
+    }
+
+    .header-image-left, .header-image-right {
+        margin-bottom: 10px; /* Add some space between the image and the next element */
+    }
+
+    .header-content {
+        order: 2; /* Ensure the content is in the middle */
+    }
+
+    .header-image-left {
+        order: 1; /* Image on the top */
+    }
+
+    .header-image-right {
+        order: 3; /* Image on the bottom */
+    }
 }
 
-.skill-category ul li {
-    margin-bottom: 5px;
-}
