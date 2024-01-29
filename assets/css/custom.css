@@ -12,26 +12,29 @@ body {
 
 #header_wrap .inner {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* Pushes the children to the edges */
-    padding: 20px;
-    max-width: 100%; /* Override the theme's max-width */
-    margin: 0 auto; /* Center the header */
-}
-
-.header-image-left, .header-image-right {
-    width: auto; /* Override the max-width from the theme */
-    max-width: 100px; /* Set a max-width to ensure images don't get too large */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.header-content {
-    flex-grow: 1; /* Allows the content to take up remaining space */
+  }
+  
+  #logo, #profile_picture {
+    flex-basis: 20%; /* Adjust the width as needed */
+  }
+  
+  #logo img, #profile_picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #title_and_tagline {
+    flex-grow: 1;
     text-align: center;
-    padding: 0 20px; /* Add padding to ensure text doesn't touch the images */
-}
-
-
+  }
+  
+  /* Additional styles for the header elements */
+  #project_title, #project_tagline {
+    margin: 0; /* Removes default margin */
+  }
+  
 
 nav {
     text-align: center; /* Center the nav if you prefer */
