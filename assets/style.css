@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    position: relative;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; /* or any size you prefer */
+    height: auto;
+}
+
+.main-content {
+    flex: 3;
+    /* Your main content styles */
+}
+
+.skills-section {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    border-left: 2px solid #ccc; /* Add a border to separate from the main content */
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: none; /* Removes the default list bullet */
+    padding-left: 20px; /* Indent the list */
+}
+
+.skill-category ul li {
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh; /* Makes sure container fills the whole height of the viewport */
+}
+
+/* Ensure header has enough padding or margin to not overlap with the header image */
+.header {
+    position: relative;
+    padding-right: 120px; /* Adjust based on header image size */
+}
+
+.main-content {
+    flex-grow: 3; /* Flex-grow for clarity */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* If skills-section is a sidebar, it should not need margin-left */
+.skills-section {
+    flex-basis: 200px; /* Adjust this to set the width of the sidebar */
+    padding: 20px;
+    border-left: 2px solid #ccc;
+}
