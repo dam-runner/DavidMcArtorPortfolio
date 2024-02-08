@@ -1,5 +1,7 @@
 body {
-    display: block; /* Changed from flex to block for natural document flow */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
     margin: 0;
     padding: 0;
 }
@@ -9,7 +11,7 @@ header, nav, footer {
     width: 100%; /* They span the full width of the viewport */
 }
 
-/* If you have a header image, you may want to keep this */
+/* To add later*/
 .header-image {
     position: absolute;
     top: 0;
@@ -20,7 +22,8 @@ header, nav, footer {
 
 .main-content-wrap {
     display: flex; /* Enables flexbox for the main content area */
-    flex-direction: row; /* Aligns children in a row */
+    padding: 0;
+    flex-direction: 1; /* Aligns children in a row */
     justify-content: space-between; /* Distributes space between and around flex items */
     align-items: flex-start; /* Aligns children to the top */
     margin-top: 20px; /* Space below the nav, adjust as needed */
