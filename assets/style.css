@@ -1,70 +1,50 @@
 body {
-    display: flex;
-    flex-direction: row;
+    display: block; /* Changed from flex to block for natural document flow */
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-    position: relative;
+header, nav, footer {
+    display: block; /* Ensures they are block-level elements */
+    width: 100%; /* They span the full width of the viewport */
 }
 
+/* If you have a header image, you may want to keep this */
 .header-image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px; /* or any size you prefer */
+    width: 100px; 
     height: auto;
 }
 
-.main-content {
-    flex: 3;
-    /* Your main content styles */
+.main-content-wrap {
+    display: flex; /* Enables flexbox for the main content area */
+    flex-direction: row; /* Aligns children in a row */
+    justify-content: space-between; /* Distributes space between and around flex items */
+    align-items: flex-start; /* Aligns children to the top */
+    margin-top: 20px; /* Space below the nav, adjust as needed */
+    margin-bottom: 20px; /* Space above the footer, adjust as needed */
 }
 
-.skills-section {
-    flex: 1;
-    margin-left: 20px;
-    padding: 20px;
-    border-left: 2px solid #ccc; /* Add a border to separate from the main content */
-}
-
-.skill-category {
-    margin-bottom: 20px;
-}
-
-.skill-category h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.skill-category ul {
-    list-style-type: none; /* Removes the default list bullet */
-    padding-left: 20px; /* Indent the list */
-}
-
-.skill-category ul li {
-    margin-bottom: 5px;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh; /* Makes sure container fills the whole height of the viewport */
-}
-
-/* Ensure header has enough padding or margin to not overlap with the header image */
-.header {
-    position: relative;
-    padding-right: 120px; /* Adjust based on header image size */
+.left-sidebar, .right-sidebar {
+    /* Set widths as a percentage of the viewport width */
+    width: 15%; /* for example, 15% of the viewport width */
+    /* Set a max-width if you want to limit the sidebar width */
+    max-width: 200px; /* for example, maximum 200px */
+    overflow-y: auto; /* Adds vertical scroll if needed */
 }
 
 .main-content {
-    flex-grow: 3; /* Flex-grow for clarity */
-    padding: 20px; /* Add padding for spacing */
+    /* Set the main content area to take up the remaining space */
+    flex-grow: 1; /* Takes up remaining space */
+    width: 70%; /* for example, 70% of the viewport width */
+    overflow-y: auto; /* Adds vertical scroll if needed */
 }
 
-/* If skills-section is a sidebar, it should not need margin-left */
-.skills-section {
-    flex-basis: 200px; /* Adjust this to set the width of the sidebar */
-    padding: 20px;
-    border-left: 2px solid #ccc;
+footer {
+    position: relative; /* Position relative to allow for natural document flow */
+    width: 100%; /* Footer should span the full width of the viewport */
 }
+
+
