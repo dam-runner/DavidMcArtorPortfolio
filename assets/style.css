@@ -1,53 +1,62 @@
-body {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
-    margin: 0;
-    padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .section-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
-header, nav, footer {
-    display: block; /* Ensures they are block-level elements */
-    width: 100%; /* They span the full width of the viewport */
+@layer components {
+  .section-transition {
+    @apply my-8 py-2 border-t border-b border-gray-600;
+  }
 }
 
-/* To add later*/
-.header-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px; 
-    height: auto;
+@layer utilities {
+  .grid-layout {
+    @apply grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+  .ombre-blue-green {
+    background: linear-gradient(120deg, #085FDF, #10821C);
+  }
+  .ombre-gray-blue {
+    background: linear-gradient(120deg, #62676E, #085FDF);
+  }
+  .ombre-green-gray {
+    background: linear-gradient(120deg, #10821C, #62676E);
+  }
 }
 
-.main-content-wrap {
-    display: flex; /* Enables flexbox for the main content area */
-    padding: 0;
-    flex-direction: 1; /* Aligns children in a row */
-    justify-content: space-between; /* Distributes space between and around flex items */
-    align-items: flex-start; /* Aligns children to the top */
-    margin-top: 20px; /* Space below the nav, adjust as needed */
-    margin-bottom: 20px; /* Space above the footer, adjust as needed */
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
-.left-sidebar, .right-sidebar {
-    /* Set widths as a percentage of the viewport width */
-    width: 15%; /* for example, 15% of the viewport width */
-    /* Set a max-width if you want to limit the sidebar width */
-    max-width: 200px; /* for example, maximum 200px */
-    overflow-y: auto; /* Adds vertical scroll if needed */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.main-content {
-    /* Set the main content area to take up the remaining space */
-    flex-grow: 1; /* Takes up remaining space */
-    width: 70%; /* for example, 70% of the viewport width */
-    overflow-y: auto; /* Adds vertical scroll if needed */
+.tagline-entering {
+  animation: slideInRight 0.5s forwards;
 }
 
-footer {
-    position: relative; /* Position relative to allow for natural document flow */
-    width: 100%; /* Footer should span the full width of the viewport */
+.tagline-exiting {
+  animation: slideOutLeft 0.5s forwards;
 }
-
 
