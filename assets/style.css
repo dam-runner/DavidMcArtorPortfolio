@@ -218,3 +218,32 @@ footer a {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   margin-bottom: 2rem; /* Space below the section */
 }
+
+/* About Section Styling */
+#about .personal {
+  flex: 1; /* Takes up 1 part of the space */
+}
+
+#about .professional {
+  flex: 2; /* Takes up 2 parts of the space */
+}
+
+/* Ensure that custom bullet points do not conflict with defaults */
+ul {
+  list-style-type: none; /* Removes default bullet points */
+}
+
+ul li::before {
+  content: '•'; /* Adds custom bullet point */
+  color: #06c; /* Bullet point color */
+  display: inline-block;
+  margin-right: .5em; /* Adds space between bullet point and text */
+}
+
+/* Ensure background images are rendered correctly */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+
