@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS for additional styling not covered by Tailwind */
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.0.15/dist/tailwind.min.css');
-
 /* Profile Picture Styling */
 .profile-pic {
   /* Custom styles for the profile picture's oval frame */
