@@ -50,6 +50,8 @@
   }
 }
 
+
+/* Apply this class to each of your section containers */
 @keyframes slideOutLeft {
   from {
     opacity: 1;
@@ -80,3 +82,8 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
+/* Additional styles */
+.section {
+  text-align: center;
+  padding: 2rem 0;
+}
