@@ -15,19 +15,28 @@
 <body class="bg-gray-100">
 
     <!-- Hero Section -->
-    <section class="hero bg-cover bg-center h-screen" style="background-image: url('your-background-image.jpg');">
-        <div class="container mx-auto px-4 h-full flex justify-center items-center">
-            <div class="text-center">
-                <h1 class="text-white text-6xl font-bold">David McArtor</h1>
-                <img src="your-profile-picture.jpg" alt="Profile Picture" class="mt-4 object-cover rounded-full w-32 h-32 mx-auto">
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('your-background-image.jpg');">
+        <div class="container mx-auto px-4 h-full flex flex-col justify-between">
+            <div class="pt-10">
+                <!-- Empty div for spacing -->
+            </div>
+            <div class="flex justify-end items-end h-1/2">
+                <div class="text-right">
+                    <img src="your-profile-picture.jpg" alt="Profile Picture" class="object-cover rounded-full w-32 h-32 border-4 border-white shadow-xl">
+                    <h1 class="text-white text-4xl font-bold mt-4">David McArtor</h1>
+                </div>
+            </div>
+            <div id="tagline" class="text-white text-center p-4 bg-black bg-opacity-50">
+                <!-- Rotating tagline controlled by JS will go here -->
             </div>
         </div>
     </section>
 
+
     <!-- Nav Bar -->
     <nav class="bg-white shadow-lg">
       <div class="container mx-auto px-4">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center py-4">
           <div class="flex space-x-4">
             <!-- Primary Navbar items -->
             <div><a href="#" class="block py-5 px-3 text-gray-700 font-semibold">Home</a></div>
@@ -43,34 +52,41 @@
       </div>
     </nav>
 
-
     <!-- About Section -->
-    <section class="about my-8">
+    <section class="bg-gray-100 py-8">
         <div class="container mx-auto px-4">
-            <!-- Personal Subsection -->
-            <div class="personal mb-6">
-                <h2 class="text-3xl font-bold mb-3">Personal</h2>
-                <p>Your personal description from the PDF goes here...</p>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Personal Subsection -->
+                <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
+                        <h2 class="text-2xl font-bold mb-4">Personal</h2>
+                        <p>Your personal description from the PDF goes here...</p>
+                    </div>
+                </div>
+                <!-- Professional Subsection -->
+                <div class="w-full md:w-1/2 px-4">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
+                        <h2 class="text-2xl font-bold mb-4">Professional</h2>
+                        <ul>
+                            <!-- List items from your PDF's professional section go here -->
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- Professional Subsection -->
-            <div class="professional mb-6">
-                <h2 class="text-3xl font-bold mb-3">Professional</h2>
-                <ul>
-                    <!-- List items from your PDF's professional section go here -->
-                </ul>
-            </div>
-            <!-- Mission Subsection -->
-            <div class="mission mb-6">
-                <h2 class="text-3xl font-bold mb-3">Mission</h2>
+        </div>
+    </section>
+
+
+        <!-- Mission Section -->
+    <section id="mission" class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
+                <h2 class="text-2xl font-bold mb-4">Mission</h2>
                 <p>Your mission statement from the PDF goes here...</p>
             </div>
         </div>
     </section>
 
-        <!-- Mission Section -->
-        <section id="mission" class="p-5">
-            <!-- Mission content goes here -->
-        </section>
 
         <!-- Skills and Experience Section with sub-sections for different skill sets -->
         <section id="skills" class="ombre-green-gray p-5">
