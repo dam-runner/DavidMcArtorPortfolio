@@ -178,3 +178,43 @@ footer a {
   }
 }
 
+#about h2 {
+  color: #222; /* Darker color for better readability */
+  margin-bottom: 2rem; /* More space above the title */
+}
+
+#about h3 {
+  color: #333; /* Slightly lighter than h2 */
+  margin-bottom: 1.5rem; /* Space below subtitles */
+}
+
+#about p, #about li {
+  color: #444; /* Grey color for text to reduce strain */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+#about .flex-auto {
+  padding: 1rem; /* Spacing around the content */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+#about .p-4 {
+  flex-grow: 1; /* Ensure divs take up full container height */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Space out content */
+}
+
+@media (max-width: 768px) {
+  #about .flex-auto {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    margin-bottom: 1rem; /* Space between sections */
+  }
+}
+
+/* Add a subtle shadow to the section to create depth */
+#about {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem; /* Space below the section */
+}
