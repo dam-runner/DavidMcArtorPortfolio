@@ -35,7 +35,7 @@
             </div>
             <div class="flex justify-end items-end h-1/2">
                 <div class="container mx-auto px-4 h-full flex flex-col justify-end">
-                    <img src="./assets/Profile Picture.jpg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg">
+                    <img src="./assets/Profile Picture.jpg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg justify-end">
                     <h1 class="text-white text-4xl font-bold mt-4">David McArtor</h1>
                 </div>
             </div>
@@ -50,7 +50,7 @@
     <script src="./assets/scripts.js"></script>
 
     <!-- Nav Bar -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg justify-right">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="flex space-x-4">
@@ -60,6 +60,7 @@
             <div><a href="#experience" class="block py-5 px-3 text-gray-700 font-semibold">Experience/Skills</a></div>
             <div><a href="#soft-skills" class="block py-5 px-3 text-gray-700 font-semibold">Soft Skills</a></div>
             <div><a href="#values" class="block py-5 px-3 text-gray-700 font-semibold">Values</a></div>
+            <div><a href="#values" class="block py-5 px-3 text-gray-700 font-semibold">Fun Facts</a></div>
             <div><a href="#projects" class="block py-5 px-3 text-gray-700 font-semibold">Projects</a></div>
           </div>
         </div>
@@ -70,14 +71,14 @@
     <section id="about" class="bg-white py-8">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-6">Who Am I?</h2>
-        <div class="-mx-2 grid grid-cols-2 gap-4">
-          <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+        <div class="flex flex-wrap justify-center md:flex-nowrap">
+          <div class="md:flex-1 px-2 mb-4 md:mb-0">
             <div class="p-4">
               <h3 class="text-xl font-semibold mb-2">Personal</h3>
               <p>I’m a full-time father of two (aged 2 and 4) and part-time doctoral candidate at the University of the Basque Country.  I’m working on developing and applying skills and tools to a range of problems– I’m currently working on data science, machine learning, generative AI tools, language and speech analysis, and prompt engineering. I like running, reading, and exploring Colorado with my family.</p>
             </div>
           </div>
-          <div class="w-full md:w-1/2 px-2">
+          <div class="md:flex-1 px-2">
             <div class="p-4">
               <h3 class="text-xl font-semibold mb-2">Professional</h3>
                 <ul class="list-disc list-inside">
@@ -98,13 +99,13 @@
 
 
     <!-- Mission Section -->
-    <section id="mission" class="py-8" style="background-image: url('./assets/Mt-Rainier-Pic.jpeg');>
-        <div class="container mx-auto px-4 text-center">
-            <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
-                <h2 class="text-2xl font-bold mb-4">Mission</h2>
-                <p>Doing the most good I can in the world through connecting people and ideas, being a multiplier, and striving to help us all reach our full potential.  I’m seeking an opportunity where I can contribute my talents and skills as part of an effective, collaborative, diverse team of people.</p>
-            </div>
+    <section id="mission" class="py-8 text-center" style="background-image: url('./assets/Mt-Rainier-Pic.jpeg'); background-size: cover; background-position: center;">
+      <div class="container mx-auto px-4">
+        <div class="bg-white bg-opacity-90 rounded-lg shadow-lg p-5">
+          <h2 class="text-2xl font-bold mb-4">Mission</h2>
+          <p>Doing the most good I can in the world through connecting people and ideas, being a multiplier, and striving to help us all reach our full potential.  I’m seeking an opportunity where I can contribute my talents and skills as part of an effective, collaborative, diverse team of people.</p>
         </div>
+      </div>
     </section>
 
 
@@ -112,10 +113,10 @@
     <section id="experience-skills" class="bg-white py-8">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-6">Experience/Skills</h2>
-        <p class="text-xl text-center italic mb-4">"What are you looking for?"</p>
+        <p class="text-xl text-center italic mb-4">What are you looking for?</p>
     
         <!-- Organization Builder Sub-section -->
-        <div class="mb-6">
+        <div class="mb-6 bg-white rounded-lg shadow p-6">
           <h3 class="text-2xl font-semibold mb-2">Organization Builder</h3>
           <ul class="list-disc list-inside space-y-2">
             <li>PMP, SHRM-CP, Lean Six Sigma Green Belt</li>
@@ -129,11 +130,47 @@
         </div>
           
           <!-- Researcher Card -->
+        <div class="bg-white rounded-lg shadow p-6 mb-4">
+          <h3 class="text-xl font-semibold mb-3">Researcher</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>PhD student at UPV/EHU researching Automatic Speech Recognition (ASR) technologies</li>
+            <li>Member of Language and Speech Laboratory <a href="https://laslab.org/staff/davidmcartor/" class="text-blue-500 hover:text-blue-700">David McArtor, Laslab</a></li>
+            <li>University research projects, samples upon request. Examples:</li>
+            <li>Statistical analysis of linguistic corpus to determine semantic distinctions between the modals of obligation 'have to' and 'need to'</li>
+            <li>Cross-linguistic and diachronic sense evolutions of words for “dog” in English, Spanish, and Hindi</li>
+            <li>Martin Scholar Research Project: “The Motives, Both Humanitarian and National Interest, Behind a Country’s Decision to Participate in Peacekeeping Operations and What Such Motives Tell Us About What to Expect From Peacekeeping.”</li>
+          </ul>
+        </div>
+
+          <!-- Technical Skills Card -->
           <div class="bg-white rounded-lg shadow p-6">
-            <h3 class="text-xl font-semibold mb-3">Researcher</h3>
+            <h3 class="text-xl font-semibold mb-3">Technical Skills</h3>
             <p>Details about your research skills and experience...</p>
           </div>
-    
+          
+          <!-- Agile Learner Card -->
+           <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Agile Learner</h3>
+            <p>Details about your research skills and experience...</p>
+          </div>
+
+          <!-- Educator Card -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Educator</h3>
+            <p>Details about your research skills and experience...</p>
+          </div>
+
+          <!-- Team Leader Card -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Team Leader</h3>
+            <p>Details about your research skills and experience...</p>
+          </div>
+
+          <!-- Program and Project Manager Card -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Program and Project Manager</h3>
+            <p>Details about your research skills and experience...</p>
+          </div>
           <!-- Other cards go here -->
         </div>
       </div>
@@ -141,7 +178,7 @@
 
 
     <!-- Soft Skills Section -->
-    <section id="soft-skills" class="p-5" style="background-image: url('./assets/Colorado-Pic.jpeg');>
+    <section id="mission" class="py-8 text-center" style="background-image: url('./assets/Mt-Rainier-Pic.jpeg'); background-size: cover; background-position: center;">
         <!-- Content from "Soft Skills" section of the provided website content -->
     </section>
 
