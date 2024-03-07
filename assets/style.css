@@ -252,3 +252,28 @@ ul li::before {
   background-position: center;
 }
 
+/* Grid Layout for Experience/Skills Section */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.span-2-columns {
+  grid-column: span 2 / auto; /* Spans two columns */
+}
+
+.card {
+  /* Common styles for all cards */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+  .span-2-columns {
+    grid-column: auto; /* Each card takes full width on smaller screens */
+  }
+}
+
