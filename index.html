@@ -34,8 +34,8 @@
                 <!-- Empty div for spacing -->
             </div>
             <div class="flex justify-end items-end h-1/2">
-                <div class="self-end">
-                    <img src="./assets/Profile Picture.jpg" alt="Profile Picture" class="rounded-full w-24 h-32 object-cover border-4 border-white shadow-lg">
+                <div class="container mx-auto px-4 h-full flex flex-col justify-end">
+                    <img src="./assets/Profile Picture.jpg" alt="Profile Picture" class="rounded-full w-16 h-20 md:w-32 md:h-40 object-cover border-4 border-white shadow-lg">
                     <h1 class="text-white text-4xl font-bold mt-4">David McArtor</h1>
                 </div>
             </div>
@@ -69,27 +69,24 @@
     </nav>
 
     <!-- About Section -->
-    <section class="bg-gray-100 py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap -mx-4">
-                <!-- Personal Subsection -->
-                <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
-                        <h2 class="text-2xl font-bold mb-4">Personal</h2>
-                        <p>Your personal description from the PDF goes here...</p>
-                    </div>
-                </div>
-                <!-- Professional Subsection -->
-                <div class="w-full md:w-1/2 px-4">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
-                        <h2 class="text-2xl font-bold mb-4">Professional</h2>
-                        <ul>
-                            <!-- List items from your PDF's professional section go here -->
-                        </ul>
-                    </div>
-                </div>
+    <section id="about" class="bg-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Who Am I?</h2>
+        <div class="flex flex-wrap justify-center -mx-2">
+          <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Personal</h3>
+              <p>Your personal description from the PDF goes here...</p>
             </div>
+          </div>
+          <div class="w-full md:w-1/2 px-2">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Professional</h3>
+              <p>Your professional description from the PDF goes here...</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
 
@@ -104,52 +101,28 @@
     </section>
 
 
-        <!-- Skills and Experience Section with sub-sections for different skill sets -->
-        <section id="skills" class="ombre-green-gray p-5">
-        <!-- Content from "Experience/Skills" section of the provided website content -->
-        <div class="grid-layout">
-        <!-- Organization Builder Sub-section -->
-        <div class="organization-builder">
-        <h2>Organization Builder</h2>
-        <!-- Content goes here -->
+    <!-- Experience/Skills Section -->
+    <section id="experience-skills" class="bg-gray-100 py-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Experience/Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Organization Builder Card -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Organization Builder</h3>
+            <p>Details about your experience and skills as an organization builder...</p>
+          </div>
+          
+          <!-- Researcher Card -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-xl font-semibold mb-3">Researcher</h3>
+            <p>Details about your research skills and experience...</p>
+          </div>
+    
+          <!-- Other cards go here -->
         </div>
-            <!-- Researcher Sub-section -->
-            <div class="researcher">
-                <h2>Researcher</h2>
-                <!-- Content goes here -->
-            </div>
-
-            <!-- Technical Skills Sub-section -->
-            <div class="technical-skills">
-                <h2>Technical Skills</h2>
-                <!-- Content goes here -->
-            </div>
-
-            <!-- Agile Learner Sub-section -->
-            <div class="agile-learner">
-                <h2>Agile Learner</h2>
-                <!-- Content goes here -->
-            </div>
-
-            <!-- Educator Sub-section -->
-            <div class="educator">
-                <h2>Educator</h2>
-                <!-- Content goes here -->
-            </div>
-
-            <!-- Team Leader Sub-section -->
-            <div class="team-leader">
-                <h2>Team Leader</h2>
-                <!-- Content goes here -->
-            </div>
-
-            <!-- Program and Project Manager Sub-section -->
-            <div class="program-project-manager">
-                <h2>Program and Project Manager</h2>
-                <!-- Content goes here -->
-            </div>
-        </div>
+      </div>
     </section>
+
 
     <!-- Soft Skills Section -->
     <section id="soft-skills" class="p-5">
