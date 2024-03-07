@@ -24,5 +24,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         taglineElement.classList.remove('tagline-entering');
       }, 500);
     }, 500);
-  }, 4000);
+  }, 8000);
 });
