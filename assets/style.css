@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS for additional styling not covered by Tailwind */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.0.15/dist/tailwind.min.css');
+
+/* Profile Picture Styling */
+.profile-pic {
+  /* Custom styles for the profile picture's oval frame */
+  border-radius: 9999px;
+  border: 4px solid white;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem; /* Smaller text on mobile devices */
+  }
+  .profile-pic {
+    width: 24rem; /* Smaller profile picture on mobile devices */
+    height: 36rem;
+  }
+}
+
+/* Tailwind utility classes will handle most of the responsiveness and styling directly within the HTML */
+
 @layer base {
   .section-padding {
     padding-top: 2rem;
