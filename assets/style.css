@@ -89,3 +89,26 @@
   padding-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  #about div[style*="flex: 1;"] {
+    flex: 0 0 33.333%;
+  }
+
+  #about div[style*="flex: 2;"] {
+    flex: 0 0 66.666%;
+  }
+
+  #about .p-4 {
+    height: 100%;
+  }
+}
+
+#about p {
+  text-align: left;
+  font-size: 1.125rem; /* 18px if the base font size is 16px */
+}
+
+#about ul {
+  text-align: left;
+  font-size: 1rem; /* 16px */
+}
