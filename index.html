@@ -57,10 +57,10 @@
             <!-- Primary Navbar items -->
             <div><a href="#" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Home</a></div>
             <div><a href="#mission" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Mission</a></div>
-            <div><a href="#experience" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Experience/Skills</a></div>
+            <div><a href="#experience-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Experience/Skills</a></div>
             <div><a href="#soft-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Soft Skills</a></div>
             <div><a href="#values" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Values</a></div>
-            <div><a href="#Fun Facts" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Fun Facts</a></div>
+            <div><a href="#fun-facts" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Fun Facts</a></div>
             <div><a href="#projects" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Projects</a></div>
             <div><a href="mailto:david.a.mcartor@gmail.com" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Contact Me</a></div>
           </div>
@@ -71,27 +71,27 @@
     <!-- About Section -->
     <section id="about" class="bg-white py-8">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-6">Who Am I?</h2>
+        <h2 class="text-3xl font-bold text-center mb-4">Who Am I?</h2> <!-- Reduced margin bottom to mb-4 -->
         <div class="flex flex-wrap md:flex-nowrap">
-          <div class="flex-auto" style="flex: 0 0 40%;">
+          <div class="flex-auto md:flex-1" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
             <div class="p-4 h-full">
               <h3 class="text-xl font-semibold mb-2">Personal</h3>
               <p style="font-size: 1.125rem;">I’m a full-time father of two (aged 2 and 4) and part-time doctoral candidate at the University of the Basque Country. I’m working on developing and applying skills and tools to a range of problems—I’m currently working on data science, machine learning, generative AI tools, language and speech analysis, and prompt engineering. I like running, reading, and exploring Colorado with my family.</p>
             </div>
           </div>
-          <div class="flex-auto" style="flex: 0 0 60%;">
+          <div class="flex-auto md:flex-1" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
             <div class="p-4 h-full">
-              <h3 class="text-xl font-semibold mb-2" style="margin-left: 2">Professional</h3>
-                <ul class="list-disc list-inside" style="font-size: 1rem; margin-top: 0; margin-left: 2">
-                  <li>BS Spanish, BA Interdisciplinary Studies</li>
-                  <li>MA Teaching English as a Second Language</li>
-                  <li>Current PhD student studying ASR in multilingual acquisition</li>
-                  <li>5 years’ experience teaching English and academic skills</li>
-                  <li>6 years’ experience in water quality program management and maintenance</li>
-                  <li>PMP, SHRM-CP, Lean Six Sigma Green Belt</li>
-                  <li>WTPO 1, WDM 2, WWTPO 3, CCS, Class A CDL</li>
-                  <li>Certs in Data Science, Machine Learning, Excel, Project Management</li>
-                </ul>
+              <h3 class="text-xl font-semibold mb-2">Professional</h3>
+              <ul class="list-disc list-inside" style="font-size: 1rem; margin-top: 0;">
+                <li>BS Spanish, BA Interdisciplinary Studies</li>
+                <li>MA Teaching English as a Second Language</li>
+                <li>Current PhD student studying ASR in multilingual acquisition</li>
+                <li>5 years’ experience teaching English and academic skills</li>
+                <li>6 years’ experience in water quality program management and maintenance</li>
+                <li>PMP, SHRM-CP, Lean Six Sigma Green Belt</li>
+                <li>WTPO 1, WDM 2, WWTPO 3, CCS, Class A CDL</li>
+                <li>Certs in Data Science, Machine Learning, Excel, Project Management</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@
             <div class="card technical-skills bg-white rounded-lg shadow p-6">
               <h3 class="text-2xl font-semibold mb-2">Technical Skills</h3>
               <ul class="list-disc list-inside space-y-2">
-                <li>Python, R, SQL (see my <a href="https://dam-runner.github.io/" target="_blank">Data Science Projects page</a>)</li>
+                <li>Python, R, SQL (see my <a href="https://dam-runner.github.io/Data-Science-Projects/" target="_blank">Data Science Projects page</a>)</li>
                 <li>Prompt Engineering, AI Chatbot, Google App Script</li>
                 <li>HTML/CSS, Javascript basics, Excel, Google Sheets</li>
                 <li>Jupyter Notebooks, Google Colab, Visual Studio Code, Git, Github, Posit Cloud, BigQuery, Tableau, ChatGPT</li>
@@ -293,7 +293,7 @@
   
 
     <!-- Values Section -->
-      <section class="bg-white py-8">
+      <section id="values" class="bg-white py-8">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-6">Values</h2>
           <blockquote class="italic mb-4">"Seek first to understand, then to be understood" - Dr. Stephen R. Covey</blockquote>
@@ -320,7 +320,7 @@
 
 
     <!-- Fun Facts Section -->
-    <section class="bg-white py-8">
+    <section id="fun-facts" class="bg-white py-8">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-6">Fun Facts</h2>
         <ul class="list-disc list-inside space-y-2" style="padding-left: 2rem;">
@@ -335,7 +335,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="bg-white py-8">
+    <section id="projects" class="bg-white py-8">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
         <p class="text-xl text-center mb-4">Here are some projects that I am working on. If you want to collaborate on anything, don’t hesitate to reach out!</p>
@@ -346,7 +346,7 @@
           <!-- Data Science Projects Card -->
           <div class="card bg-white rounded-lg shadow p-6">
             <h3 class="text-2xl font-semibold mb-2">Data Science Projects</h3>
-            <p>Check out my <a href="https://dam-runner.github.io" target="_blank" class="text-blue-500 hover:text-blue-700">Data Science Projects Portfolio</a>.</p>
+            <p>Check out my <a href="https://dam-runner.github.io/Data-Science-Projects/" target="_blank" class="text-blue-500 hover:text-blue-700">Data Science Projects Portfolio</a>.</p>
                 <ul class="list-disc list-inside space-y-1 ml-4">
                   <li>Recommendation System</li>
                   <li>Trip Satisfaction Classifier</li>
@@ -360,7 +360,7 @@
           <div class="card bg-white rounded-lg shadow p-6">
             <h3 class="text-2xl font-semibold mb-2">Other Projects</h3>
                 <ul class="list-disc list-inside space-y-1 ml-4">
-                  <li>GPTs: Prompt Optimizer GPT (<a href="https://www.promptimizer.com" target="_blank" class="text-blue-500 hover:text-blue-700">Promptimizer</a>)</li>
+                  <li>GPTs: Prompt Optimizer GPT named Promptimizer</a>)</li>
                   <li>Google App Script: Binary and unicode conversion tool (link forthcoming)</li>
                   <li>My first chatbot (link forthcoming)</li>
                   <li>Career Planning website (link forthcoming)</li>
