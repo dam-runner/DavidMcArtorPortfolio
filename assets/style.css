@@ -34,7 +34,7 @@
     @apply my-8 py-2 border-t border-b border-gray-600;
   }
 }
-
+/*
 @layer utilities {
   .grid-layout {
     @apply grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
@@ -49,7 +49,7 @@
     background: linear-gradient(120deg, #10821C, #62676E);
   }
 }
-
+*/
 
 /* Apply this class to each of your section containers */
 @keyframes slideOutLeft {
@@ -83,7 +83,7 @@
 }
 
 /* Additional styles */
-.section {
+/*.section {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -104,30 +104,6 @@
 }
 */
 
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-h2, h3 {
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #444;
-}
-
-a, a:visited {
-  color: #06c;
-}
-
-a:hover {
-  color: #03a;
-}
-
-/* Spacing for sections */
-section {
-  margin-bottom: 2rem;
-}
-
 /* Responsive tweaks 
 @media (max-width: 768px) {
   .container {
@@ -143,20 +119,6 @@ section {
   }
 }
 */
-
-
-/* Ensure background images are rendered correctly */
-.bg-cover {
-  background-size: cover;
-  background-position: center;
-}
-
-#mission {
-  background-image: url('./assets/Mt-Rainier-Pic.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
 
 /* Adjustments for smaller screens 
 @media (max-width: 768px) {
