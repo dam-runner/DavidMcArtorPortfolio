@@ -1,10 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
   const taglines = [
-    "Realistic: Guy who's trying to figure out how to do the most good with what he's got",
-    "Standard: Driven multidisciplinary professional striving to apply new tools and mental models to solve challenging problems.",
-    "SEO: Innovative professional maximizing impact by collaborating in the application of cutting edge tools to solve tomorrow's problems dynamically",
-    "Self-Deprecating: Dilettante who aspires to be a polymath"
+    "Guy who's trying to figure out how to do the most good with what he's got",
+    "Driven multidisciplinary professional striving to apply new tools and mental models to solve challenging problems",
+    "Innovative professional maximizing impact by collaborating in the application of cutting edge tools to solve tomorrow's problems dynamically",
+    "Dilettante who dreams of being a polymath"
   ];
 
   let currentIndex = 0;
