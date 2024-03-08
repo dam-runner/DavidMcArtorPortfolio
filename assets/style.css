@@ -137,20 +137,6 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Improve list presentation */
-ul {
-  padding-left: 0;
-  list-style: none; /* Consider using custom icons as bullets */
-}
-
-ul li::before {
-  content: '•'; /* Replace with icons if desired */
-  color: #06c; /* Bullet or icon color */
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
 /* Contact section styles */
 footer {
   background-color: #f5f5f5;
@@ -226,18 +212,6 @@ footer a {
 
 #about .professional {
   flex: 2; /* Takes up 2 parts of the space */
-}
-
-/* Ensure that custom bullet points do not conflict with defaults */
-ul {
-  list-style-type: none; /* Removes default bullet points */
-}
-
-ul li::before {
-  content: '•'; /* Adds custom bullet point */
-  color: #06c; /* Bullet point color */
-  display: inline-block;
-  margin-right: .5em; /* Adds space between bullet point and text */
 }
 
 /* Ensure background images are rendered correctly */
