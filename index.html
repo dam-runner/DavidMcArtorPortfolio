@@ -50,36 +50,37 @@
     <script src="./assets/scripts.js"></script>
 
     <!-- Nav Bar -->
-    <nav class="bg-white shadow-lg justify-right">
+    <nav class="shadow-lg justify-right">
       <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <div class="flex space-x-4">
+        <div class="flex justify-between items-center py-4 w-screen">
+          <div class="flex space-x-4 w-screen">
             <!-- Primary Navbar items -->
-            <div><a href="#" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Home</a></div>
-            <div><a href="#mission" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Mission</a></div>
-            <div><a href="#experience-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Experience/Skills</a></div>
-            <div><a href="#soft-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Soft Skills</a></div>
-            <div><a href="#values" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Values</a></div>
-            <div><a href="#fun-facts" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Fun Facts</a></div>
-            <div><a href="#projects" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Projects</a></div>
-            <div><a href="mailto:david.a.mcartor@gmail.com" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500">Contact Me</a></div>
+            <div><a href="#" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Home</a></div>
+            <div><a href="#mission" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Mission</a></div>
+            <div><a href="#experience-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Experience/Skills</a></div>
+            <div><a href="#soft-skills" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Soft Skills</a></div>
+            <div><a href="#values" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Values</a></div>
+            <div><a href="#fun-facts" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Fun Facts</a></div>
+            <div><a href="#projects" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Projects</a></div>
+            <div><a href="mailto:david.a.mcartor@gmail.com" class="block py-5 px-3 text-gray-700 font-semibold hover:text-blue-500 hover:shadow-lg">Contact Me</a></div>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="bg-white py-8">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-4">Who Am I?</h2> <!-- Reduced margin bottom to mb-4 -->
+    <section id="about" class="border-t-8 border-blue-900 bg-gradient-to-tr from-blue-200 to to-purple-200 via-blue-100  bg-opacity-20">
+      <div class="container w-screen mx-auto px-4 mt-8  ">
+        <h2 class="text-3xl text-gray-600 font-bold text-center my-4 p-2">Who Am I?</h2> <!-- Reduced margin bottom to mb-4 -->
         <div class="flex flex-wrap md:flex-nowrap">
-          <div class="flex-auto md:flex-1" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
-            <div class="p-4 h-full">
+          <div class="flex-auto md:flex-1 px-2" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
+            <div class="p-4 h-full text-gray-800">
               <h3 class="text-xl font-semibold mb-2">Personal</h3>
               <p style="font-size: 1.125rem;">I’m a full-time father of two (aged 2 and 4) and part-time doctoral candidate at the University of the Basque Country. I’m working on developing and applying skills and tools to a range of problems—I’m currently working on data science, machine learning, generative AI tools, language and speech analysis, and prompt engineering. I like running, reading, and exploring Colorado with my family.</p>
             </div>
           </div>
-          <div class="flex-auto md:flex-1" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
+
+          <div class="flex-auto md:flex-1 px-2 text-gray-800" style="flex-basis: 50%;"> <!-- Adjusted flex-basis to 50% -->
             <div class="p-4 h-full">
               <h3 class="text-xl font-semibold mb-2">Professional</h3>
               <ul class="list-disc list-inside" style="font-size: 1rem; margin-top: 0;">
@@ -99,7 +100,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section id="mission" class="text-center" style="background-image: url('./assets/Mt-Rainier-Pic.jpg'); background-size: cover; background-position: center; padding: 6rem 0;">
+    <section id="mission" class="text-center border-t-8 border-t-teal-600" style="background-image: url('./assets/Mt-Rainier-Pic.jpg'); background-size: cover; background-position: center; padding: 6rem 0;">
       <div class="container mx-auto px-4 flex justify-start">
         <div class="max-w-md text-left">
           <h2 class="text-4xl font-bold text-white mb-4" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">Mission</h2>
@@ -109,109 +110,125 @@
     </section>
 
     <!-- Experience/Skills Section -->
-    <section id="experience-skills" class="bg-white py-8">
+    <section id="experience-skills" class="bg-teal-100 bg-opacity-50 py-8 border-t-4 border-teal-600">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-6">Experience and Skills</h2>
         <p class="text-xl text-center italic mb-4">What are you looking for?</p>
     
         <!-- Grid Container -->
-        <div class="flex flex-wrap justify-between space-x-2 md:space-x-4 lg:space-x-6">
+        <div class="flex flex-wrap -m-4">
             
             <!-- Organization Builder Sub-section -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-              <h3 class="text-xl font-semibold">Organization Building</h3>
-              <ul class="list-disc list-inside space-y-1 text-sm">
-                <li>PMP, SHRM-CP, Lean Six Sigma Green Belt</li>
-                <li>Wellness Program Manager</li>
-                <li>Non-profit Board President</li>
-                <li>Managed multiple programs concurrently</li>
-                <li>Process improvement experience</li>
-                <li>MS Office Suite, Google Workspace, Slack, Teams, Zoom</li>
-                <li>Google Project Management certificate</li>
-              </ul>
-            </div>
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->
+                <div class="border border-black rounded-lg p-4">
+                  <h3 class="text-xl font-bold text-center">Organization Building</h3>
+                  <ul class="list-disc list-outside space-y-2 text-sm p-2 mx-4">
+                    <li>Project Management Professional (PMP)</li>
+                    <li>Certified HR Profession (SHRM-CP)</li>
+                    <li>Lean Six Sigma Green Belt</li>
+                    <li>Wellness Program Manager</li>
+                    <li>Non-profit Board President</li>
+                    <li>Managed multiple programs concurrently</li>
+                    <li>Process improvement experience</li>
+                    <li>MS Office Suite, Google Workspace, Slack, Teams, Zoom</li>
+                    <li>Google Project Management certificate</li>
+                  </ul>
+                </div>
+              </div>
             
             <!-- Researcher Card -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-              <h3 class="text-xl font-semibold">Research</h3>
-              <ul class="list-disc list-inside space-y-1 text-sm">
-                <li>PhD student at UPV/EHU researching Automatic Speech Recognition (ASR) technologies</li>
-                <li>Member of Language and Speech Laboratory <a href="https://laslab.org/staff/davidmcartor/" class="text-blue-500 hover:text-blue-700">David McArtor, Laslab</a></li>
-                <li>University research projects, samples upon request. Examples:</li>
-                <li>Statistical analysis of semantic distinctions between the modals of obligation 'have to' and 'need to'</li>
-                <li>Cross-linguistic and diachronic sense evolutions of words for “dog” in English, Spanish, and Hindi</li>
-                <li>Martin Scholar Research Project: “National Motives for UN Peacekeeping”</li>
-              </ul>
-            </div>
-    
-            <!-- Technical Skills Sub-section -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-              <h3 class="text-xl font-semibold">Technical Skills</h3>
-              <ul class="list-disc list-inside space-y-1 text-sm">
-                <li>Python, R, SQL (see my <a href="https://dam-runner.github.io/Data-Science-Projects/" target="_blank">Data Science Projects page</a>)</li>
-                <li>Prompt Engineering, AI Chatbot, Google App Script</li>
-                <li>HTML/CSS, Javascript basics, Excel, Google Sheets</li>
-                <li>Jupyter Notebooks, Google Colab, VSC, Git, Github, Posit Cloud, BigQuery, Tableau, ChatGPT</li>
-                <li>Massachusetts Institute of Technology Data Science and Machine Learning certification</li>
-                <li>MOS Excel Certification</li>
-                <li>Google Data Analysis Certificate</li>
-                <li>Additional Courses:
-                  <ul class="list-disc list-inside space-y-1 ml-4">
-                    <li>LangChain: Chat With Your Data</li>
-                    <li>ChatGPT: Prompt Engineering for Developers</li>
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->
+                <div class="border border-black rounded-lg p-4">
+                  <h3 class="text-xl font-bold text-center">Research</h3>
+                  <ul class="list-disc list-outside space-y-1 text-sm p-2 mx-4">
+                    <li>PhD student at UPV/EHU researching Automatic Speech Recognition (ASR) technologies</li>
+                    <li>Member of Language and Speech Laboratory <a href="https://laslab.org/staff/davidmcartor/" class="text-blue-800 hover:text-blue-400">David McArtor, Laslab</a></li>
+                    <li>University research projects, samples upon request. Examples:</li>
+                    <li>Statistical analysis of semantic distinctions between the modals of obligation 'have to' and 'need to'</li>
+                    <li>Cross-linguistic and diachronic sense evolutions of words for “dog” in English, Spanish, and Hindi</li>
+                    <li>Martin Scholar Research Project: “National Motives for UN Peacekeeping”</li>
                   </ul>
-                </li>
-              </ul>
-            </div>
-    
+                </div>
+              </div>
+
+            <!-- Technical Skills Sub-section -->
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->  
+                <div class="border border-black rounded-lg p-4">
+                  <h3 class="text-xl font-bold text-center">Technical Skills</h3>
+                  <ul class="list-disc list-outside space-y-1 text-sm p-2 mx-4">
+                    <li>Python, R, SQL (see my <a href="https://dam-runner.github.io/Data-Science-Projects/" target="_blank" class="text-blue-800 hover:text-blue-400">Data Science Projects page</a>)</li>
+                    <li>Prompt Engineering, AI Chatbot, Google App Script</li>
+                    <li>HTML/CSS, Javascript basics, Excel, Google Sheets</li>
+                    <li>Jupyter Notebooks, Google Colab, VSC, Git, Github, Posit Cloud, BigQuery, Tableau, ChatGPT</li>
+                    <li>Massachusetts Institute of Technology Data Science and Machine Learning certification</li>
+                    <li>MOS Excel Certification</li>
+                    <li>Google Data Analysis Certificate</li>
+                    <li>Additional Courses and Projects from DeepLearning.AI:
+                      <ul class="list-disc list-inside space-y-1 ml-4 marker:text-blue-600">
+                        <li>LangChain: Chat With Your Data</li>
+                        <li>ChatGPT: Prompt Engineering for Developers</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
             <!-- Educator Card -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-                <h3 class="text-xl font-bold">Educator</h3>
-                <ul class="list-disc list-inside space-y-1 text-sm">
-                  <li>MA TESL; 5 years experience teaching students from ages 15–62 from 30+ countries
-                    <ul class="list-disc list-inside space-y-1">
-                      <li>Reading, writing, listening, speaking, report writing, public speaking, etc.</li>
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->
+                <div class="border border-black rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-center">Educator</h3>
+                    <ul class="list-disc list-outside space-y-2 text-sm p-2 mx-4">
+                      <li>Masters in Teaching English as a Second Language (TESL)</li>
+                      <li>5 years' experience teaching, including university-level writing and rhetoric, and college-level ESL  students</li>
+                      <li> Have taught students from ages 15-62, from 30+ countries, and from beginner English learners to university-level writers</li>
+                      <li>4 years as peer mentor and tutor, including in Anthropology, Psychology, and Statistics</li>
+                      <li>8+ years experience training and mentoring colleagues in a variety of skills</li>
+                      <li>Taught Spanish to colleagues and local fire department</li>
+                      <li>Classes Taught:
+                        <ul class="list-disc list-inside space-y-1 p-2 marker:text-blue-600">
+                          <li>Reading, writing, listening, speaking, report writing, public speaking, rhetoric</li>
+                        </ul>
                     </ul>
-                  </li>
-                  <li>4 years as tutor and peer mentor</li>
-                  <li>8+ years experience training and mentoring colleagues in a variety of skills</li>
-                  <li>Taught Spanish to colleagues and local fire department</li>
-                </ul>
-            </div>
+                </div>
+              </div>
     
             <!-- Team Leader Card -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-                <h3 class="text-xl font-bold text-center">Team Leader</h3>
-                <p class="text-base mb-4">Preferred Leadership Styles: Collaborator, Coach</p>
-                <ul class="list-disc list-inside space-y-1 text-sm">
-                  <li>1.5 years as Board President
-                  <li>4+ as Wellness Coordinator
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                      <li>Coordinated 4-7 member multi-departmental team</li>
-                      <li>Saved $14,000 annually with a $750 budget</li>
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->
+                <div class="border border-black rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-center ">Team Leader</h3>
+                    <p class="text-base p-2">Preferred Leadership Styles: Collaborator, Coach</p>
+                    <ul class="list-disc list-outside space-y-2 p-2 mx-4">
+                      <li>1.5 years as non-profit Board President
+                      <li>4+ years as Wellness Coordinator
+                        <ul class="list-disc list-inside space-y-2 text-sm p-2">
+                          <li>Coordinated 4-7 member multi-departmental team</li>
+                          <li>Saved $14,000 annually with a $750 budget</li>
+                        </ul>
+                      </li>
+                      <li>IACURH 2006 Conference Co-Assistant Coordinator
+                        <ul class="list-disc list-inside space-y-2 text-sm p-2">
+                          <li>Managed team of 6 to help deliver highly-rated conference with 300+ attendees</li>
+                        </ul>
+                      </li>
+                      <li>Shift leader, Hall President, CCC student council, team captain</li>
                     </ul>
-                  </li>
-                  <li>IACURH 2006 Conference Co-Assistant Coordinator
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                      <li>Managed team of 6 to help deliver highly-rated conference with 300+ attendees</li>
-                    </ul>
-                  </li>
-                  <li>Shift leader; Hall President; CCC student council; team captain</li>
-                </ul>
-            </div>
+                </div>
+              </div>
     
             <!-- Program and Project Manager Card -->
-            <div class="flex-1 p-4 border border-black rounded-lg mb-4 md:flex-basis[31%] md:max-w-[31%] md:mb-0 md:text-base lg:text-lg"">
-                <h3 class="text-base font-bold text-center">Program and Project Manager</h3>
-                <p class="text-base">Senior Engineering Technician | Wastewater Treatment Operator | Wellness Coordinator | Logistics Coordinator</p>
-                <ul class="list-disc list-inside space-y-1 text-sm">
-                  <li>6 years’ experience managing multiple simultaneous programs and projects</li>
-                  <li>Reputation for being proactive and detail-oriented</li>
-                  <li>Identified process improvements saving 60+ hours/year and significant cost savings</li>
-                  <li>Helped to create 30+ little pantries and a community garden</li>
-                  <li>Improved processes and communication working with wide variety of stakeholders</li>
-                </ul>
-            </div>
+              <div class="p-4 w-full md:w-1/2 lg:w-1/3"> <!-- Responsive box container -->
+                <div class="border border-black rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-center p-2">Program and Project Manager</h3>
+                    <p class="text-base">Senior Engineering Technician | Wastewater Treatment Operator | Wellness Coordinator | Logistics Coordinator</p>
+                    <ul class="list-disc list-inside space-y-1  p-2 text-base">
+                      <li>6 years’ experience managing multiple concurrent programs and projects</li>
+                      <li>Reputation for being a proactive,  detail-oriented problem-solver</li>
+                      <li>Identified process improvements saving 60+ hours/year and significant cost savings</li>
+                      <li>Logistics Coordinator: Helped create and install 30+ little pantries and a community garden</li>
+                      <li>Improved processes and communication working with wide variety of stakeholders</li>
+                    </ul>
+                </div>
+              </div>
     
         </div> <!-- Closing tag for the grid container -->
       </div>
