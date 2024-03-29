@@ -2,56 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Profile Picture Styling */
-.profile-pic {
-  /* Custom styles for the profile picture's oval frame */
-  border-radius: 9999px;
-  border: 4px solid white;
-}
-
-/* Add responsive design for smaller screens */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3rem; /* Smaller text on mobile devices */
-  }
-  .profile-pic {
-    width: 24rem; /* Smaller profile picture on mobile devices */
-    height: 36rem;
-  }
-}
-
 /* Tailwind utility classes will handle most of the responsiveness and styling directly within the HTML */
 
-@layer base {
-  .section-padding {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@layer components {
-  .section-transition {
-    @apply my-8 py-2 border-t border-b border-gray-600;
-  }
-}
-/*
-@layer utilities {
-  .grid-layout {
-    @apply grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
-  }
-  .ombre-blue-green {
-    background: linear-gradient(120deg, #085FDF, #10821C);
-  }
-  .ombre-gray-blue {
-    background: linear-gradient(120deg, #62676E, #085FDF);
-  }
-  .ombre-green-gray {
-    background: linear-gradient(120deg, #10821C, #62676E);
-  }
-}
-*/
-
-/* Apply this class to each of your section containers */
+/* These classes help handle the transitions for the scripts.js for the rotating tagline */
 @keyframes slideOutLeft {
   from {
     opacity: 1;
@@ -82,51 +35,4 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
-/* Additional styles */
-/*.section {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-/*
-@media (min-width: 768px) {
-  #about div[style*="flex: 1;"] {
-    flex: 0 0 33.333%;
-  }
 
-  #about div[style*="flex: 2;"] {
-    flex: 0 0 66.666%;
-  }
-
-  #about .p-4 {
-    height: 100%;
-  }
-}
-*/
-
-/* Responsive tweaks 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 2rem;
-  }
-
-  h2, h3 {
-    text-align: center;
-  }
-
-  ul li::before {
-    margin-left: 0; /* Adjust icon alignment on mobile 
-  }
-}
-*/
-
-/* Adjustments for smaller screens 
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;  Stack cards on smaller screens 
-  }
-  .span-2-columns {
-    grid-column: auto; Each card takes full width on smaller screens 
-  }
-}
-*/
