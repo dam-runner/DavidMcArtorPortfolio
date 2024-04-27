@@ -35,16 +35,43 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
-/* Media queries for background images */
+/* Background image handling */
 
-@media (max-width: 767px) {
-  #mission {
-    background-size: contain;
+/* Mission Section - Desktop Styles */
+#mission {
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/09/04/19/mt-rainier-3525358_640.jpg');
     background-position: center;
-  }
-
-  #soft-skills {
-    background-size: contain;
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+/* Soft Skills Section - Desktop Styles */
+#soft-skills {
+    background-image: url('https://cdn.pixabay.com/photo/2016/12/15/07/54/horseshoe-bend-1908283_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    #mission, #soft-skills {
+        background-attachment: scroll; /* Adjust attachment for better mobile support */
+    }
+
+    #mission {
+        background-image: url('https://cdn.pixabay.com/photo/2018/07/09/04/19/mt-rainier-3525358_640.jpg'); /* Optionally, specify a different image optimized for mobile */
+        background-size: cover; /* Cover the entire section */
+        background-position: center; /* Ensure the focus is central */
+    }
+
+    #soft-skills {
+        background-image: url('https://cdn.pixabay.com/photo/2016/12/15/07/54/horseshoe-bend-1908283_1280.jpg'); /* Optionally, specify a different image optimized for mobile */
+        background-size: contain; /* Include entire image */
+        background-position: center; /* Center the background */
+    }
+}
+
 
