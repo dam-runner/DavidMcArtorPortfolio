@@ -68,9 +68,10 @@
     }
 
     #soft-skills {
-        background-image: url('https://cdn.pixabay.com/photo/2016/12/15/07/54/horseshoe-bend-1908283_1280.jpg'); /* Optionally, specify a different image optimized for mobile */
-        background-size: contain; /* Include entire image */
-        background-position: center; /* Center the background */
+        background-image: url('https://cdn.pixabay.com/photo/2017/04/05/01/12/antelope-canyon-2203676_1280.jpg'); /* New mobile-optimized portrait image */
+        background-size: cover; /* Cover ensures the image fully covers the available space */
+        background-position: center; /* Center the image to ensure focus is maintained */
+        background-attachment: scroll; /* Change to scroll to avoid fixed background issues on iOS */
     }
 }
 
