@@ -63,11 +63,17 @@
         background-position: center; /* Center the image to ensure focus is maintained */
         background-attachment: scroll; /* Change to scroll to avoid fixed background issues on iOS */
     }
-    /* No changes needed for #mission, as the same styles apply */
+
+    #mission {
+        background-attachment: scroll; /* Change background attachment to scroll */
+        background-size: cover; /* Ensure the image covers the section */
+        background-position: center; /* Center the image within the section */
+        min-height: 100vh; /* Ensure section is at least as tall as the viewport */
+    }
 }
 
 /* Small Laptop Screens - Between 768px and 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 960px) {
     #soft-skills {
         background-attachment: scroll; /* Enable scrolling for the background */
         background-size: cover; /* Continue to cover the full area */
