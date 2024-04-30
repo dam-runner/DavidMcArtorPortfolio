@@ -29,10 +29,14 @@
 
 .tagline-entering {
   animation: slideInRight 0.5s forwards;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .tagline-exiting {
   animation: slideOutLeft 0.5s forwards;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 /* Background image handling */
