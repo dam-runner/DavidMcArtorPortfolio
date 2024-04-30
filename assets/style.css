@@ -1,53 +1,88 @@
-body {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
-    margin: 0;
-    padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind utility classes will handle most of the responsiveness and styling directly within the HTML */
+
+/* These classes help handle the transitions for the scripts.js for the rotating tagline */
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
-header, nav, footer {
-    display: block; /* Ensures they are block-level elements */
-    width: 100%; /* They span the full width of the viewport */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-/* To add later*/
-.header-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px; 
-    height: auto;
+.tagline-entering {
+  animation: slideInRight 0.5s forwards;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
-.main-content-wrap {
-    display: flex; /* Enables flexbox for the main content area */
-    padding: 0;
-    flex-direction: 1; /* Aligns children in a row */
-    justify-content: space-between; /* Distributes space between and around flex items */
-    align-items: flex-start; /* Aligns children to the top */
-    margin-top: 20px; /* Space below the nav, adjust as needed */
-    margin-bottom: 20px; /* Space above the footer, adjust as needed */
+.tagline-exiting {
+  animation: slideOutLeft 0.5s forwards;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
-.left-sidebar, .right-sidebar {
-    /* Set widths as a percentage of the viewport width */
-    width: 15%; /* for example, 15% of the viewport width */
-    /* Set a max-width if you want to limit the sidebar width */
-    max-width: 200px; /* for example, maximum 200px */
-    overflow-y: auto; /* Adds vertical scroll if needed */
+/* Background image handling */
+
+/* Mission Section - Desktop Styles */
+#mission {
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/09/04/19/mt-rainier-3525358_640.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.main-content {
-    /* Set the main content area to take up the remaining space */
-    flex-grow: 1; /* Takes up remaining space */
-    width: 70%; /* for example, 70% of the viewport width */
-    overflow-y: auto; /* Adds vertical scroll if needed */
+/* Soft Skills Section - Desktop Styles */
+#soft-skills {
+    background-image: url('https://cdn.pixabay.com/photo/2016/12/15/07/54/horseshoe-bend-1908283_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-footer {
-    position: relative; /* Position relative to allow for natural document flow */
-    width: 100%; /* Footer should span the full width of the viewport */
+/* Mobile Styles */
+@media (max-width: 767px) {
+    #soft-skills {
+        background-image: url('https://cdn.pixabay.com/photo/2017/04/05/01/12/antelope-canyon-2203676_1280.jpg'); /* Mobile-optimized portrait image */
+        background-size: cover; /* Cover ensures the image fully covers the available space */
+        background-position: center; /* Center the image to ensure focus is maintained */
+        background-attachment: scroll; /* Change to scroll to avoid fixed background issues on iOS */
+    }
+
+    #mission {
+        background-attachment: scroll; /* Change background attachment to scroll */
+        background-size: cover; /* Ensure the image covers the section */
+        background-position: center; /* Center the image within the section */
+        min-height: 100vh; /* Ensure section is at least as tall as the viewport */
+    }
 }
 
+/* Small Laptop Screens - Between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 960px) {
+    #soft-skills {
+        background-attachment: scroll; /* Enable scrolling for the background */
+        background-size: cover; /* Continue to cover the full area */
+        min-height: 100vh; /* Ensure the section is at least as tall as the viewport */
+    }
+    /* No changes needed for #mission, as the same styles apply */
+}
 
